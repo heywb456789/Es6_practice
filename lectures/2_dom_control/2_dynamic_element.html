@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="1_selector.js" defer></script>
+    <script src="2_dynamic_element.js" defer></script>
     <link rel="stylsheet" href="./style.css" />
   </head>
   <body>
@@ -12,10 +12,15 @@
       <h2 id="title">운동</h2>
       <form name="myform">
         <input type="text" name="myText" />
-        <button>추가</button>
+        <button type="button" id="prev">앞에 추가</button>
+        <button type="button" id="back">추가</button>
+        <button type="button" id="target-remove">제거</button>
       </form>
       <ul class="list">
-        <li class="item">수쿼트</li>
+        <li class="item" id="target">
+          수쿼트
+          <button class="remove-btn">X</button>
+        </li>
         <li class="item">벤치</li>
         <li class="item">데드</li>
       </ul>
